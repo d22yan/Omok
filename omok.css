@@ -1,0 +1,17 @@
+#background {
+	background-image: url(all_free_backgrounds_simple_vector_orange_based_01.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
+}
+
+#container {
+	word-wrap: break-word;
+	z-index: 0;
+}
