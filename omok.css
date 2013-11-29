@@ -11,6 +11,46 @@
 }
 
 #container {
-	word-wrap: break-word;
 	z-index: 0;
+}
+
+#mycanvas {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+#mytable {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+	z-index: 2;
+}
+
+.coordinate {
+	width:35px;
+	height:35px;
+	background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+	background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+	background-image: -o-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+	background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #000000));
+	background-image: -webkit-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+	background-image: linear-gradient(to top left, #FFFFFF 0%, #000000 100%);
+}
+
+#test {
+	width: 562px;
+	margin: 0 auto;
+	border: 1px solid red;
+	position: absolute;
+}
+#test2 {
+	width: 562px;
+	margin: 0 auto;
+	border: 1px solid blue;
+	position: absolute;
 }
