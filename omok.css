@@ -17,23 +17,23 @@
 	z-index: 0;
 }
 
-#grid-canvas {
+#board-canvas {
 	margin: 0px;
 	padding: 0px;
     position: absolute;
     z-index: 1;
 }
 
-#grid-table {
+#board-table {
 	left: -20px;
 	margin: 0px;
 	padding: 0px;
     position: relative;
     top: -20px;
-    z-index: 0;
+    z-index: 2;
 }
 
-.coordinate {
+.point {
 	width:40px;
 	height:40px;
 	background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
@@ -44,7 +44,18 @@
 	background-image: linear-gradient(to top left, #FFFFFF 0%, #000000 100%);
 }
 
-#grid-container {
+#board-container {
 	margin: 50px auto;
 	width: 562px;
+}
+
+.asd {
+	width:40px;
+	height:40px;
+	background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+	background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+	background-image: -o-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
+	background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #00A3EF 100%);
+	background-image: linear-gradient(to bottom right, #FFFFFF 0%, #00A3EF 100%);
 }
