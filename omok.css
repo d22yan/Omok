@@ -1,4 +1,5 @@
 #background {
+	background-color: #abc;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -11,29 +12,30 @@
 }
 
 #container {
+	height: 100%;
+	width: 100%;
 	z-index: 0;
 }
 
-#mycanvas {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+#grid-canvas {
+	margin: 0px;
+	padding: 0px;
+    position: absolute;
     z-index: 1;
 }
 
-#mytable {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
-	z-index: 2;
+#grid-table {
+	left: -20px;
+	margin: 0px;
+	padding: 0px;
+    position: relative;
+    top: -20px;
+    z-index: 0;
 }
 
 .coordinate {
-	width:35px;
-	height:35px;
+	width:40px;
+	height:40px;
 	background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
 	background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
 	background-image: -o-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
@@ -42,15 +44,7 @@
 	background-image: linear-gradient(to top left, #FFFFFF 0%, #000000 100%);
 }
 
-#test {
+#grid-container {
+	margin: 50px auto;
 	width: 562px;
-	margin: 0 auto;
-	border: 1px solid red;
-	position: absolute;
-}
-#test2 {
-	width: 562px;
-	margin: 0 auto;
-	border: 1px solid blue;
-	position: absolute;
 }
