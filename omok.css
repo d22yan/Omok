@@ -1,10 +1,10 @@
 #background {
-	background-image: -ms-linear-gradient(top left, #6BFFCE 0%, #801F80 100%);
-	background-image: -moz-linear-gradient(top left, #6BFFCE 0%, #801F80 100%);
-	background-image: -o-linear-gradient(top left, #6BFFCE 0%, #801F80 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #6BFFCE), color-stop(1, #801F80));
-	background-image: -webkit-linear-gradient(top left, #6BFFCE 0%, #801F80 100%);
-	background-image: linear-gradient(to bottom right, #6BFFCE 0%, #801F80 100%);
+	background-image: -ms-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
+	background-image: -moz-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
+	background-image: -o-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #2DEFFC), color-stop(1, #02043B));
+	background-image: -webkit-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
+	background-image: linear-gradient(to bottom right, #2DEFFC 0%, #02043B 100%);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -39,14 +39,14 @@
 }
 
 #board-container {
-	top: 19px;
+	float: left;
 	height: 562px;
-	margin: 0px auto;
 	position: relative;
+	top: 19px;
 	width: 562px;
 }
 
-#menu-container {
+#menu {
 	background-image: url(blackboard-backgrounds-wallpapers.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -55,6 +55,13 @@
 	height: 600px;
 	margin: 50px auto;
 	width: 800px;
+}
+
+#menu-leftcontainer,
+#menu-rightcontainer {
+	float: left;
+	height: 600px;
+	width: 119px;
 }
 
 .point {
