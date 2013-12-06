@@ -54,14 +54,31 @@
 	border-radius: 30px;
 	height: 600px;
 	margin: 50px auto;
-	width: 800px;
+	width: 1000px;
 }
 
 #menu-leftcontainer,
 #menu-rightcontainer {
 	float: left;
 	height: 600px;
-	width: 119px;
+	width: 219px;
+}
+
+#side-black {
+	color: #000;
+}
+
+#side-white {
+	color: #fff;
+}
+
+.label-side {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 36px;
+	height: 50px;
+	margin: 0px auto;
+	text-align: center;
+	width: 219px;
 }
 
 .point {
