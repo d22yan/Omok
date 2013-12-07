@@ -64,16 +64,21 @@
 	width: 219px;
 }
 
-#label-black {
-	color: #000;
+#label-menu {
 }
 
 #label-white {
 	color: #fff;
 }
 
+#label-whitescore {
+	color: #fff;
+	margin-top: 320px;
+}
+
 .label {
 	cursor: default;
+	display:block;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 30px;
 	height: 50px;
@@ -86,7 +91,7 @@
 	-ms-user-select: none;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
-	width: 100px;
+	width: 100%;
 }
 
 .point {
