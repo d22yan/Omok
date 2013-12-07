@@ -7,7 +7,7 @@
 	}
 
 	if(!empty($_POST['query'])) {
-		if($_POST['query'] == 'UpdateUserActive') {
+		if($_POST['query'] == 'updateActive') {
 			if(!empty($_POST['user']) && !empty($_POST['active'])) {
 				updateActive($_POST['user'], $_POST['active']);
 				echo 'notempty';

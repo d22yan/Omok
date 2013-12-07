@@ -64,20 +64,22 @@
 	width: 219px;
 }
 
-#side-black {
+#label-black {
 	color: #000;
 }
 
-#side-white {
+#label-white {
 	color: #fff;
 }
 
-.label-side {
+.label {
+	cursor: default;
 	font-family: 'Permanent Marker', cursive;
-	font-size: 36px;
+	font-size: 30px;
 	height: 50px;
-	margin: 0px auto;
+	margin: 20px auto;
 	text-align: center;
+	text-shadow: 0px 0px 5px #000;
 	width: 219px;
 }
 
