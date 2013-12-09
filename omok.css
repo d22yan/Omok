@@ -111,9 +111,9 @@
 	border-radius: 36px;
 	-moz-border-radius: 36px;
 	-webkit-border-radius: 36px;
-	box-shadow:         inset 0 0 8px #808080,0px 0px 10px 1px #000;
-	-moz-box-shadow:    inset 0 0 8px #808080,0px 0px 10px 1px #000;
-	-webkit-box-shadow: inset 0 0 8px #808080,0px 0px 10px 1px #000;
+	box-shadow:         inset 0 0 8px #808080, 0px 0px 10px 1px #000;
+	-moz-box-shadow:    inset 0 0 8px #808080, 0px 0px 10px 1px #000;
+	-webkit-box-shadow: inset 0 0 8px #808080, 0px 0px 10px 1px #000;
 	height: 36px;
 	margin: 2px 2px;
 	position: absolute;
@@ -130,9 +130,9 @@
 	border-radius: 			36px;
 	-moz-border-radius: 	36px;
 	-webkit-border-radius: 	36px;
-	box-shadow:         inset 0 0 8px #808080,0px 0px 10px 1px #000;
-	-moz-box-shadow:    inset 0 0 8px #808080,0px 0px 10px 1px #000;
-	-webkit-box-shadow: inset 0 0 8px #808080,0px 0px 10px 1px #000;
+	box-shadow:         inset 0 0 8px #808080, 0px 0px 10px 1px #000;
+	-moz-box-shadow:    inset 0 0 8px #808080, 0px 0px 10px 1px #000;
+	-webkit-box-shadow: inset 0 0 8px #808080, 0px 0px 10px 1px #000;
 	height: 36px;
 	margin: 2px 2px;
 	position: absolute;
