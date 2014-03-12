@@ -16,10 +16,25 @@
 	z-index: -1;
 }
 
-#container {
+#root {
 	height: 100%;
 	width: 100%;
 	z-index: 0;
+}
+
+#blackboard {
+	background-image: url(blackboard-backgrounds-wallpapers.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 30px;
+	height: 600px;
+	margin: 50px auto;
+	width: 1000px;
+}
+
+#board { 
+	opacity: 0;
 }
 
 #board-canvas {
@@ -27,6 +42,21 @@
 	padding: 0px;
     position: absolute;
     z-index: 1;
+}
+
+#board-grid {
+	float: left;
+	height: 562px;
+	position: relative;
+	top: 19px;
+	width: 562px;
+}
+
+#board-left-panel,
+#board-right-panel {
+	float: left;
+	height: 600px;
+	width: 219px;
 }
 
 #board-table {
@@ -38,44 +68,29 @@
     z-index: 2;
 }
 
-#board-container {
-	float: left;
-	height: 562px;
-	position: relative;
-	top: 19px;
-	width: 562px;
+#label-2player { }
+
+#label-computer { }
+
+#label-exit {
+	margin-top: 460px;
 }
 
-#menu {
-	background-image: url(blackboard-backgrounds-wallpapers.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 30px;
-	height: 600px;
-	margin: 50px auto;
-	width: 1000px;
+#label-newgame { }
+
+#label-omok {
+	font-size: 60px;
+	margin: 50px 0px;
 }
 
-#menu-leftcontainer,
-#menu-rightcontainer {
-	float: left;
-	height: 600px;
-	width: 219px;
-}
+#label-score-black { }
 
-#label-newgame {}
-
-#label-white {
-	color: #fff;
-}
-
-#label-whitescore {
-	color: #fff;
+#label-score-white {
 	margin-top: 320px;
 }
 
 .label {
+	color: #fff;
 	cursor: default;
 	display:block;
 	font-family: 'Permanent Marker', cursive;
@@ -91,6 +106,24 @@
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	width: 100%;
+}
+
+.label.black {
+	color: #000;
+}
+
+.label.is-clickable:hover {
+	text-shadow: 0px 0px 5px #fff;
+}
+
+#menu { 
+	opacity: 0;
+}
+
+#menu-panel {
+	margin: 0px auto;
+	height: 600px;
+	width: 219px;
 }
 
 .point {

@@ -1,16 +1,16 @@
 <?php 
 
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$database = 'database';
+$hostname = 'localhost';
+$username = 'root';
+$password = 'Winter';
+$database = 'dtest';
 
-$link = mysql_connect($host, $user, $pass); 
-if (!$link) { 
+$mysql_connect = mysql_connect($hostname, $username, $password);
+if (!$mysql_connect) { 
 	die('Could not connect to MySQL: ' . mysql_error()); 
 } 
-$db_selected = mysql_select_db($database, $link);
-if (!$db_selected) {
+$mysql_select_db = mysql_select_db($database, $mysql_connect);
+if (!$mysql_select_db) {
     die ('Can\'t use database : ' . mysql_error());
 }
 

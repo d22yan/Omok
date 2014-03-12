@@ -1,25 +1,25 @@
 <?php 
-	require_once(__DIR__.'/ConnectToDatabase.php');
+	require_once('/ConnectToDatabase.php');
 
 	function fetchGameId() {
-		$statementFetchGameId = 'SELECT MAX(game_id) FROM omok_games';
+		$statementFetchGameId = 'SELECT MAX(game_id) FROM omok_game';
 		$resultFetchGameId = mysql_query($statementFetchGameId);
 		$rowFetchGameId = mysql_fetch_array($resultFetchGameId);
 		$gameId = $rowFetchGameId[0] + 1;
-		$statementCreateGameId = 'INSERT INTO omok_games(game_id) VALUES ("'.$gameId.'")';
+		$statementCreateGameId = 'INSERT INTO omok_game(game_id) VALUES ("'.$gameId.'")';
 		mysql_query($statementCreateGameId);
 		return $gameId;
 	}
 
 	function fetchScore($color) {
-		$statementFetchScore = 'SELECT COUNT(win) FROM omok_games WHERE win=1 AND '.$color.' <> 0';
+		$statementFetchScore = 'SELECT COUNT(win) FROM omok_game WHERE win=1 AND '.$color.' <> 0';
 		$resultFetchScore = mysql_query($statementFetchScore);
 		$rowFetchScore = mysql_fetch_array($resultFetchScore);
 		return $rowFetchScore[0];
 	}
 
 	function UpdateMove($gameid, $move, $black, $white, $win) {
-		$statementUpdateMove = 'INSERT INTO omok_games(game_id, move, black, white, win) VALUES ("'.$gameid.'","'.$move.'","'.$black.'","'.$white.'","'.$win.'")';
+		$statementUpdateMove = 'INSERT INTO omok_game(game_id, move, black, white, win) VALUES ("'.$gameid.'","'.$move.'","'.$black.'","'.$white.'","'.$win.'")';
 		mysql_query($statementUpdateMove);
 	}
 
