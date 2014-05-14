@@ -1,13 +1,5 @@
 #background {
-	background-image: -ms-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
-	background-image: -moz-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
-	background-image: -o-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #2DEFFC), color-stop(1, #02043B));
-	background-image: -webkit-linear-gradient(top left, #2DEFFC 0%, #02043B 100%);
-	background-image: linear-gradient(to bottom right, #2DEFFC 0%, #02043B 100%);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: #000;
 	height: 100%;
 	left: 0px;
 	position: fixed;
@@ -29,7 +21,7 @@
 	background-size: cover;
 	border-radius: 30px;
 	height: 600px;
-	margin: 50px auto;
+	margin: 40px auto;
 	width: 1000px;
 }
 
